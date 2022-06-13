@@ -8,7 +8,7 @@ void main() {
   runApp(MaterialApp(
     home: Scaffold(
         // appBar: AppBar(title: Text("Widget Fundamentals")),
-      body: SafeArea(
+        body: SafeArea(
             child: Center(
       child: Container(
         color: Colors.blue,
