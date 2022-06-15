@@ -9,7 +9,7 @@ void main() {
     home: Scaffold(
         // appBar: AppBar(title: Text("Widget Fundamentals")),
         body: SafeArea(
-            child: Column(
+            child: ListView(
       children: [
         Card(
           shape:
@@ -34,7 +34,7 @@ void main() {
               ),
               Text(
                 "Android OS",
-                style: TextStyle(fontSize: 40),
+                style: TextStyle(fontSize: 40, fontFamily: 'DancingScript'),
               ),
             ],
           ),
