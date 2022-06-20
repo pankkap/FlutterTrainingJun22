@@ -1,45 +1,23 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_application_1/7-ButtonsDemo.dart';
+// ignore_for_file: prefer_const_constructors
 
-// import 'ButtonsDemo.dart';
-// import 'MyApp.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Screens/HomeScreen.dart';
+import 'package:flutter_application_1/Screens/Screen1.dart';
+import 'package:flutter_application_1/Screens/Screen2.dart';
+
+import 'Screens/Screen0.dart';
 
 void main() {
-  // runApp(MyApp());
-  // runApp(ButtonsDemo());
-  runApp(Test());
-}
-
-class Test extends StatefulWidget {
-  @override
-  State<Test> createState() => _TestState();
-}
-
-class _TestState extends State<Test> {
-  int x = 5;
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        body: SafeArea(
-          child: Container(
-            child: ElevatedButton(
-              onPressed: () {
-                setState(() {
-                  x = 2;
-                });
-                if (x > 10) {
-                  print("Hello, this is an If Statement");
-                } else {
-                  print("Hello this is Else Statement");
-                }
-              },
-              child: Text("Button"),
+  runApp(
+    MaterialApp(
+      home: HomeScreen(),
+      routes: {
+        'S0': (context) => Screen0(title: "Settings"),
+        'S1': (context) => Screen1(
+              title: 'Gallery',
             ),
-          ),
-        ),
-      ),
-    );
-  }
+        'S2': (context) => Screen2(title: 'About Phone'),
+      },
+    ),
+  );
 }
