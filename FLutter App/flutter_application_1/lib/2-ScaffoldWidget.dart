@@ -9,15 +9,15 @@ void main() {
       home: Scaffold(
     appBar: AppBar(
       title: Text("My First Custom Flutter App"),
-      backgroundColor: Color.fromARGB(255, 255, 128, 64),
+      backgroundColor: Colors.blue,
       centerTitle: true,
     ),
     body: Center(
       child: // creating Text Widget
           Text(
-        "I am Your Trainer for Flutter",
+        "Welcome to Flutter",
         textDirection: TextDirection.ltr,
-        style: TextStyle(fontSize: 24),
+        style: TextStyle(fontSize: 24, color: Colors.blue),
       ),
     ),
   )));
