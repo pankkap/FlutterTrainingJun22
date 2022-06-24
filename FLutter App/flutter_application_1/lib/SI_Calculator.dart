@@ -2,14 +2,14 @@
 
 import 'package:flutter/material.dart';
 
-class MyTextField extends StatefulWidget {
-  const MyTextField({Key? key}) : super(key: key);
+class SI_Calculator extends StatefulWidget {
+  const SI_Calculator({Key? key}) : super(key: key);
 
   @override
-  State<MyTextField> createState() => _MyTextFieldState();
+  State<SI_Calculator> createState() => _SI_CalculatorState();
 }
 
-class _MyTextFieldState extends State<MyTextField> {
+class _SI_CalculatorState extends State<SI_Calculator> {
   // Helps to collect data from TextFields
   TextEditingController principalController = TextEditingController();
   TextEditingController rateController = TextEditingController();
