@@ -31,15 +31,15 @@ void main() {
       // home: DataTableDemo(),
       // home: TextFieldDemo(),
       // home: SI_Calculator(),
-      // home: PizzaApp(),
-      home: sicalci(),
+      home: PizzaApp(),
+      // home: sicalci(),
 
       routes: {
         'S0': (context) => Screen0(title: "Settings"),
         'S1': (context) => Screen1(
               title: 'Gallery',
             ),
-        'S2': (context) => Screen2(title: 'About Phone'),
+        'S2': (context) => Screen2(title: 'Payment'),
       },
     ),
   );

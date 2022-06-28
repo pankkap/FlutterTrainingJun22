@@ -117,9 +117,8 @@ class _sicalciState extends State<sicalci> {
                         _tError = null;
                       }
 
-                          calculateSI();
-                    }
-                    );
+                      calculateSI();
+                    });
                   },
                   child: Text("Calculate")),
               ElevatedButton(
@@ -153,19 +152,16 @@ class _sicalciState extends State<sicalci> {
   }
 
   void calculateSI() {
-                          if (_pController.text.isNotEmpty &&
-                          _rController.text.isNotEmpty &&
-                          _tController.text.isNotEmpty &&
-                          _check == true) {
-                        var p = int.parse(_pController.text);
-                        var r = int.parse(_rController.text);
-                          setState(() {
-                          t = int.parse(_tController.text);
-                        si = 100 + ((p * r * t) / 100);    
-                          });
-                        
-
-                      }
-                    }
+    if (_pController.text.isNotEmpty &&
+        _rController.text.isNotEmpty &&
+        _tController.text.isNotEmpty &&
+        _check == true) {
+      var p = int.parse(_pController.text);
+      var r = int.parse(_rController.text);
+      setState(() {
+        t = int.parse(_tController.text);
+        si = 100 + ((p * r * t) / 100);
+      });
+    }
   }
 }
