@@ -185,6 +185,12 @@ class _PizzaAppState extends State<PizzaApp> {
             ElevatedButton(
                 onPressed: () {
                   showPreview(context);
+
+                  // Send data to another screen
+
+                  // Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  //   return OrderScreen(qty: _initialValue);
+                  // }));
                 },
                 child: Text(
                   "Preview Order",
@@ -259,3 +265,18 @@ class _PizzaAppState extends State<PizzaApp> {
         });
   }
 }
+
+// Send data to another screen
+
+// class OrderScreen extends StatelessWidget {
+//   double qty;
+//   OrderScreen({Key key, this.qty}) : super(key: key);
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//         body: SafeArea(
+//       child: Container(child: Text(qty.toString())),
+//     ));
+//   }
+// }
